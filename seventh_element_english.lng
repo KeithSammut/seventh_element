@@ -1,0 +1,50 @@
+;message headers
+The Seventh Element=The Seventh Element
+
+m0=Welcome to the Seventh Elemental Realm
+m1=The Titans have sent you to defeat the demonic guardians of the cursed treasures.
+m2=Each of the treasures is guarded heavily, so you must find a way to go forth and avenge your destiny!
+m2x=You should start by upgrading teleportation to help you attack and evade
+m3=Congratulations you finished off the first guardian 
+m4=Now you must collect the treasure and assemble back
+m5=The Guardians have sensed your presence. Treacherous opponents have been sent to protect, so beware for every step you do!
+m6=Your next destination is at the south west of the starting point
+m7=Don't forget that you need a drake to collect the treasure
+m8=You managed to destroy the second guardian!
+m9=Now you need extra armour to face your next opponent, so you must go to ground and  use the resources you found to make a stone shield.
+m10=You Have Defeated The Legendary Three Headed Hydra!
+m11=Now you must travel south east to face the final guardian
+m15=Titan: You Have Defeated all Four Guardians.
+m16=Titan: Hence, We Are Promoting You To A Titan
+m13=Titan: The Balance Has Been Restored Once Again.
+m14=Now That You Have a Stone Shield, You Must Head North West For Your Next Destination.
+m15=Titan: If You Wish To End The Game, Just Come Back Here And Talk To Me After.
+
+
+;objective strings
+
+ob1=Qonquer and Destroy the North East Treasure
+ob2=Collect The Treasure And Assemble back
+ob3=Collect The Treasure And Head South West From Your Starting Point
+ob4=Go To Ground, Collect the Treasure And Forge a Stone Shield.
+
+ob5=Head North West To Defeat The Next Guardian.
+ob6=Head South East To Defeat The Last Guardian.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

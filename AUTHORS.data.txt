@@ -1,0 +1,62 @@
+Scenario:
+=========
+
+The Seventh Element : Created and developed by Keith Sammut
+
+
+Factions:
+=========
+
+Magic:
+Copyright 2001-2011 (c) The Glest Team (<http://glest.org>)
+Partial Copyright 2010-2011 (c) The MegaGlest Team (<http://megaglest.org>)
+Certain modifications were made to this faction to fit the scenario
+The Modded Magic faction uses music tracks from Mike Shinoda's album "The Rising Tied"
+"Remember The Name" - https://itunes.apple.com/us/album/remember-name-feat.-styles/id95787592?i=95786277
+(The song is licensed under CC-BY-NC)
+
+Tech: 
+Copyright 2001-2011 (c) The Glest Team (<http://glest.org>) 
+Partial Copyright 2010-2011 (c) The MegaGlest Team (<http://megaglest.org>)
+Certain modifications were made to this faction to fit the scenario
+
+
+Maps:
+=====
+
+oba            by Keith Sammut (Earth-Breach)
+
+
+Translations:
+=============
+
+[N/A]
+
+
+Credits go to:
+==============
+
+Titus Tscharntke(titi) - Lead developer and creator of the new Mega-Glest project (http://www.titusgames.de)
+Mark Vejvoda(SoftCoder) - Developer of the new Mega-Glest project (http://www.soft-haus.com)
+
+The original glest team who made all this possible!!!
+
+Aminos for the indians and persian background music !!
+Margaras for the egypt background music!!
+manolo camp for the background music(norsemen)!!
+http://www.burningwell.org who have nice free (public domain) textures!
+Gameboy for the norsemen icons
+Weedkiller who created the spearman model of the indians, and the princess and swordman model of the persian faction
+My family, some friends and neighbors for the unit voices.
+ZaggyDad for some help with textures/models (norsemen) and for the persian elephant model.
+Baida for the axe_thrower model (norsemen)
+Elimnator (from http://www.soundbible.com) for the autumn day sound
+Elimnator (from http://www.soundbible.com) for the autumn night sound
+Elimnator (from http://www.soundbible.com) for the  desert day sound
+Cacatoes (from http://forum.freegamedev.net/) for a nice rock texture photo used in autumn tileset.
+dobroide (from http://forum.freegamedev.net/) for spring ambiente daytime background sounds
+
+License:
+========
+All files are released under the Terms of the Creative Commons
+Attribution-ShareAlike 3.0 Unported license which is included in this distribution in the LICENCE file.

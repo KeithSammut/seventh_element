@@ -1,0 +1,1128 @@
+<?xml version="1.0" standalone="yes" ?> 
+<scenario>
+	<difficulty value="4"/>
+	<players>
+		<player control="human" faction="magic" team="1"/>
+		<player control="cpu" faction="magic" team="2"/>	
+		<player control="cpu" faction="tech" team="2"/>	
+		<player control="cpu-mega" faction="magic" team="2"/>	
+		<player control="cpu" faction="magic" team="9"/>
+		<player control="cpu-mega" faction="magic" team="1"/>
+
+	</players>
+	<map value="oba"/>
+	<tileset value="forest"/>
+	<tech-tree value="megarealms"/>
+	<default-resources value="false"/>
+	<default-units value="false"/>
+	<default-victory-conditions value="false"/>	
+	<fog-of-war value="true"/>
+<scripts>
+<startup>
+		disableAi(1)
+		disableAi(2)
+		disableAi(4)
+
+showMessage('m0', 'The Seventh Element')
+showMessage('m1', 'The Seventh Element')
+showMessage('m2', 'The Seventh Element')
+showMessage('m2x', 'The Seventh Element')
+setDisplayText('ob1')
+togglePauseGame(1);
+setAttackWarningsEnabled(0)
+createUnit('hydra', 1, {44, 48})
+hydra=lastCreatedUnit()
+createUnit('giant_daemon', 1, {199, 39})
+giant_daemon=lastCreatedUnit()
+createUnit('darkness', 3, {172, 200})
+darkness=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul1=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul2=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul3=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul4=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul5=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul6=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul7=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul8=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul9=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul10=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul11=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul12=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul13=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul14=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul15=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul16=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul17=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul18=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul19=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul20=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul21=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul22=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul23=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul24=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul25=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul26=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul27=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul28=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul29=lastCreatedUnit()
+createUnitNoSpacing('soul_', 3, {172, 200}) soul30=lastCreatedUnit()
+
+createUnit('giant_golem', 1, {53, 190})
+giant_golem=lastCreatedUnit()
+createUnit('behemoth', 1, {62, 178})
+createUnit('behemoth', 1, {42, 196})
+createUnit('behemoth', 1, {58, 206})
+createUnit('golem', 1, {54, 206})
+createUnit('behemoth', 1, {53, 190})
+
+createUnitNoSpacing('daemon', 1, {202, 40})
+createUnitNoSpacing('daemon', 1, {198, 40})
+createUnitNoSpacing('daemon', 1, {200, 42})
+createUnitNoSpacing('daemon', 1, {200, 38})
+createUnitNoSpacing('daemon', 1, {204, 40})
+createUnitNoSpacing('daemon', 1, {204, 39})
+createUnitNoSpacing('daemon', 1, {204, 38})
+createUnitNoSpacing('daemon', 1, {204, 37})
+createUnitNoSpacing('daemon', 1, {204, 36})
+createUnitNoSpacing('daemon', 1, {203, 36})
+createUnitNoSpacing('daemon', 1, {202, 36})
+createUnitNoSpacing('daemon', 1, {201, 36})
+createUnitNoSpacing('daemon', 1, {200, 36})
+createUnitNoSpacing('daemon', 1, {199, 36})
+createUnitNoSpacing('daemon', 1, {198, 36})
+createUnitNoSpacing('daemon', 1, {197, 36})
+createUnitNoSpacing('daemon', 1, {196, 36})
+createUnitNoSpacing('daemon', 1, {196, 37})
+createUnitNoSpacing('daemon', 1, {196, 38})
+createUnitNoSpacing('daemon', 1, {196, 39})
+createUnitNoSpacing('daemon', 1, {196, 40})
+createUnitNoSpacing('enchanted_wall', 4, {135, 140})
+ew1=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {136, 140})
+ew2=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {137, 140})
+ew3=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {138, 140})
+ew4=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {139, 140})
+ew5=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {140, 140})
+ew6=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {141, 140})
+ew7=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {134, 140})
+ew8=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {133, 140})
+ew9=lastCreatedUnit()
+createUnitNoSpacing('enchanted_wall', 4, {142, 140})
+ew0=lastCreatedUnit()
+
+
+
+
+createUnit('snake', 1, {56, 46})
+
+createUnit('archmage', 0, {110, 98})
+archmage=lastCreatedUnit()
+
+createUnit('lame_drake', 0, {108, 98})
+drake=lastCreatedUnit()
+createUnit('daemon', 1, {192, 40})
+daemon= lastCreatedUnit()
+giveAttackCommand(daemon, archmage)
+
+createUnit('daemon', 1, {197, 40})
+daemon= lastCreatedUnit()
+giveAttackCommand(daemon, archmage)
+
+createUnit('daemon', 1, {195, 40})
+daemon= lastCreatedUnit()
+giveAttackCommand(daemon, archmage)
+
+createUnit('daemon', 1, {196, 40})
+daemon= lastCreatedUnit()
+giveAttackCommand(daemon, archmage)
+
+createUnit('daemon', 1, {194, 40})
+daemon= lastCreatedUnit()
+giveAttackCommand(daemon, archmage)
+
+</startup>
+<unitDied>
+	if lastDeadUnit()==giant_daemon then
+		giant_daemon = nil
+togglePauseGame(1);
+showMessage('m3', 'The Seventh Element')
+showMessage('m4', 'The Seventh Element')
+setDisplayText('ob2')
+createUnit('trigger', 0, {1, 1})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('dragon', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+createUnit('snake', 1, {44, 48})
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {136, 74})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, drake)
+
+createUnit('snake', 1, {136, 74})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, drake)
+
+createUnit('snake', 1, {106, 88})
+snake1= lastCreatedUnit()
+giveAttackCommand(snake1, drake)
+
+createUnit('long_catapult', 2, {106, 88})
+catapult= lastCreatedUnit()
+giveAttackCommand(catapult, drake)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+
+
+cell_event1 = registerCellTriggerEventForUnitToUnit(snake1, drake);
+			end
+
+if lastDeadUnit()==hydra then
+		hydra = nil
+togglePauseGame(1);
+showMessage('m10', 'The Seventh Element')
+showMessage('m11', 'The Seventh Element')
+
+setDisplayText('ob6')
+destroyUnit(ew1)
+destroyUnit(ew2)
+destroyUnit(ew3)
+destroyUnit(ew4)
+destroyUnit(ew5)
+destroyUnit(ew6)
+destroyUnit(ew7)
+destroyUnit(ew8)
+destroyUnit(ew9)
+destroyUnit(ew0)
+createUnit('ghostly_dragon', 1, {100, 102})
+createUnit('ghostly_dragon', 1, {118, 84})
+createUnit('ghostly_dragon', 1, {98, 74})
+createUnit('ghostly_dragon', 1, {124, 68})
+createUnit('daemon', 1, {102, 98})
+
+			end
+
+if lastDeadUnit()==darkness then
+		darkness = nil
+
+if soul1 ~= nil then
+		destroyUnit(soul1)
+end
+
+if soul2 ~= nil then
+		destroyUnit(soul2)
+end
+
+if soul3 ~= nil then
+		destroyUnit(soul3)
+end
+
+if soul4 ~= nil then
+		destroyUnit(soul4)
+end
+
+if soul5 ~= nil then
+		destroyUnit(soul5)
+end
+
+if soul6 ~= nil then
+		destroyUnit(soul6)
+end
+
+if soul7 ~= nil then
+		destroyUnit(soul7)
+end
+
+if soul8 ~= nil then
+		destroyUnit(soul8)
+end
+
+if soul9 ~= nil then
+		destroyUnit(soul9)
+end
+
+if soul10 ~= nil then
+		destroyUnit(soul10)
+end
+
+if soul11 ~= nil then
+		destroyUnit(soul11)
+end
+
+if soul12 ~= nil then
+		destroyUnit(soul12)
+end
+
+if soul13 ~= nil then
+		destroyUnit(soul13)
+end
+
+if soul14 ~= nil then
+		destroyUnit(soul14)
+end
+
+if soul15 ~= nil then
+		destroyUnit(soul15)
+end
+
+if soul16 ~= nil then
+		destroyUnit(soul16)
+end
+
+if soul17 ~= nil then
+		destroyUnit(soul17)
+end
+
+if soul18 ~= nil then
+		destroyUnit(soul18)
+end
+
+if soul19 ~= nil then
+		destroyUnit(soul19)
+end
+
+if soul20 ~= nil then
+		destroyUnit(soul20)
+end
+
+if soul21 ~= nil then
+		destroyUnit(soul21)
+end
+
+if soul22 ~= nil then
+		destroyUnit(soul22)
+end
+
+if soul23 ~= nil then
+		destroyUnit(soul23)
+end
+
+if soul24 ~= nil then
+		destroyUnit(soul24)
+end
+
+if soul25 ~= nil then
+		destroyUnit(soul25)
+end
+
+if soul26 ~= nil then
+		destroyUnit(soul26)
+end
+
+if soul27 ~= nil then
+		destroyUnit(soul27)
+end
+
+if soul28 ~= nil then
+		destroyUnit(soul28)
+end
+
+if soul29 ~= nil then
+		destroyUnit(soul29)
+end
+
+if soul30 ~= nil then
+		destroyUnit(soul30)
+end
+
+createUnit('titan_', 0, {172, 202})
+destroyUnit(archmage)
+setCameraPosition({172, 196})
+createUnit('titan', 4, {172, 196})
+battlemage= lastCreatedUnit()
+createUnitNoSpacing('elysium', 4, {180, 196})
+createUnitNoSpacing('elysium', 4, {58, 194})
+createUnitNoSpacing('elysium', 4, {42, 50})
+createUnitNoSpacing('elysium', 4, {104, 98})
+createUnitNoSpacing('elysium', 4, {194, 38})
+
+createUnit('titan__', 5, {194, 188})
+createUnit('titan__', 5, {58, 192})
+createUnit('titan__', 5, {44, 50})
+createUnit('titan___', 5, {44, 50})
+createUnit('titan___', 5, {50, 176})
+createUnit('titan___', 5, {188, 50})
+
+
+clearDisplayText()
+showMessage('m13', 'The Seventh Element')
+showMessage('m16', 'The Seventh Element')
+showMessage('m15', 'The Seventh Element')
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('behemoth', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('ghostly_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('archer', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('horse_statue', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('drake_rider', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('flying_battle_machine', 2, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+
+
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('evil_dragon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+
+
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+createUnit('daemon', 1, {108, 98})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, titan)
+
+
+
+
+
+cell_event2 = registerCellTriggerEventForUnitToUnit(titan, battlemage);
+
+			end
+if lastDeadUnit()==soul1 then
+		soul1 = nil
+end
+
+if lastDeadUnit()==soul2 then
+		soul2 = nil
+end
+
+if lastDeadUnit()==soul3 then
+		soul3 = nil
+end
+
+if lastDeadUnit()==soul4 then
+		soul4 = nil
+end
+
+if lastDeadUnit()==soul5 then
+		soul5 = nil
+end
+
+if lastDeadUnit()==soul6 then
+		soul6 = nil
+end
+
+if lastDeadUnit()==soul7 then
+		soul7 = nil
+end
+
+if lastDeadUnit()==soul8 then
+		soul8 = nil
+end
+
+if lastDeadUnit()==soul9 then
+		soul9 = nil
+end
+
+if lastDeadUnit()==soul10 then
+		soul10 = nil
+end
+
+if lastDeadUnit()==soul11 then
+		soul11 = nil
+end
+
+if lastDeadUnit()==soul12 then
+		soul12 = nil
+end
+
+if lastDeadUnit()==soul13 then
+		soul13 = nil
+end
+
+if lastDeadUnit()==soul14 then
+		soul14 = nil
+end
+
+if lastDeadUnit()==soul15 then
+		soul15 = nil
+end
+
+if lastDeadUnit()==soul16 then
+		soul16 = nil
+end
+
+if lastDeadUnit()==soul17 then
+		soul17 = nil
+end
+
+if lastDeadUnit()==soul18 then
+		soul18 = nil
+end
+
+if lastDeadUnit()==soul19 then
+		soul19 = nil
+end
+
+if lastDeadUnit()==soul20 then
+		soul20 = nil
+end
+
+if lastDeadUnit()==soul21 then
+		soul21 = nil
+end
+
+if lastDeadUnit()==soul22 then
+		soul22 = nil
+end
+
+if lastDeadUnit()==soul23 then
+		soul23 = nil
+end
+
+if lastDeadUnit()==soul24 then
+		soul24 = nil
+end
+
+if lastDeadUnit()==soul25 then
+		soul25 = nil
+end
+
+if lastDeadUnit()==soul26 then
+		soul26 = nil
+end
+
+if lastDeadUnit()==soul27 then
+		soul27 = nil
+end
+
+if lastDeadUnit()==soul28 then
+		soul28 = nil
+end
+
+if lastDeadUnit()==soul29 then
+		soul29 = nil
+end
+
+if lastDeadUnit()==soul30 then
+		soul30 = nil
+end
+
+
+
+if lastDeadUnit()==giant_golem then
+		giant_golem = nil
+togglePauseGame(1);
+showMessage('m8', 'The Seventh Element')
+showMessage('m9', 'The Seventh Element')
+setDisplayText('ob4')
+
+createUnit('snake', 1, {72, 100})
+snake2= lastCreatedUnit()
+giveAttackCommand(snake2, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {74, 100})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+end
+
+
+
+if lastDeadUnit()==archmage then
+		archmage = nil
+setPlayerAsWinner(1)
+setPlayerAsWinner(2)
+setPlayerAsWinner(3)
+endGame()
+			end
+
+if lastDeadUnit()==titan then
+		titan = nil
+setPlayerAsWinner(1)
+setPlayerAsWinner(2)
+setPlayerAsWinner(3)
+endGame()
+			end
+
+
+if lastDeadUnit()==snake2 then
+		snake2 = nil
+
+togglePauseGame(1);
+showMessage('m14', 'The Seventh Element')
+setDisplayText('ob5')
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('horse_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('horse_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('battle_statue', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('battle_statue', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('technic_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('sword_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('horse_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('horse_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('battle_statue', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('battle_statue', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('technic_statue', 2, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+
+createUnit('snake', 1, {44, 48})
+snake= lastCreatedUnit()
+giveAttackCommand(snake, archmage)
+			end
+
+</unitDied>
+<cellTriggerEvent>   
+	if triggeredCellEventId() == cell_event1 then 
+showMessage('m5', 'The Seventh Element')
+showMessage('m6', 'The Seventh Element')
+showMessage('m7', 'The Seventh Element')
+togglePauseGame(1);
+setDisplayText('ob3')
+createUnit('archer', 2, {104, 70})
+createUnit('long_catapult', 2, {108, 114})
+createUnit('long_catapult', 2, {132, 92})
+createUnit('long_catapult', 2, {106, 72})
+createUnit('long_catapult', 2, {76, 102})
+createUnit('flying_battle_machine', 2, {80, 40})
+createUnit('flying_battle_machine', 2, {62, 192})
+createUnit('flying_battle_machine', 2, {80, 40})
+createUnit('flying_battle_machine', 2, {136, 136})
+createUnitNoSpacing('air_ballista', 2, {54, 130})
+createUnitNoSpacing('air_ballista', 2, {80, 150})
+createUnitNoSpacing('air_ballista', 2, {106, 158})
+createUnitNoSpacing('air_ballista', 2, {132, 172})
+createUnitNoSpacing('air_ballista', 2, {118, 42})
+createUnitNoSpacing('air_ballista', 2, {106, 84})
+createUnitNoSpacing('air_ballista', 2, {54, 130})
+createUnitNoSpacing('air_ballista', 2, {136, 50})
+createUnitNoSpacing('long_swordsman', 2, {50, 174})
+createUnitNoSpacing('long_swordsman', 2, {118, 70})
+createUnitNoSpacing('long_swordsman', 2, {74, 100})
+createUnitNoSpacing('long_swordsman', 2, {74, 108})
+createUnit('archer', 2, {112, 104})
+createUnit('archer', 2, {92, 76})
+createUnit('flying_battle_machine', 2, {92, 66})
+createUnitNoSpacing('long_swordsman', 2, {134, 136})
+createUnitNoSpacing('long_swordsman', 2, {118, 70})
+createUnitNoSpacing('long_swordsman', 2, {140, 110})
+createUnitNoSpacing('long_swordsman', 2, {74, 108})
+
+		unregisterCellTriggerEvent(cell_event1);
+	  end
+
+	if triggeredCellEventId() == cell_event2 then 
+togglePauseGame(1);
+setPlayerAsWinner(0)
+setPlayerAsWinner(4)
+setPlayerAsWinner(5)
+endGame()
+		unregisterCellTriggerEvent(cell_event2);
+	  end
+</cellTriggerEvent>
+
+
+<unitCreatedOfType type="archmage">
+			if unitCountOfType(0, 'archmage')>=1 then
+			archmage= lastCreatedUnit()
+	end	
+	
+</unitCreatedOfType>
+
+<unitCreatedOfType type="archmage_">
+			if unitCountOfType(0, 'archmage_')>=1 then
+			archmage= lastCreatedUnit()
+	end	
+	
+</unitCreatedOfType>
+<unitCreatedOfType type="archmage__">
+			if unitCountOfType(0, 'archmage__')>=1 then
+			archmage= lastCreatedUnit()
+	end	
+	
+</unitCreatedOfType>
+<unitCreatedOfType type="titan_">
+			if unitCountOfType(0, 'titan_')>=1 then
+			titan= lastCreatedUnit()
+	end	
+	
+</unitCreatedOfType>
+
+
+</scripts>
+</scenario>

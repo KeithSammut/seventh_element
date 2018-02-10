@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+
+<resource>
+	<image path="images/ct1.bmp"/>
+	<type value="tech">
+		<model path="models/cursed_treasure.g3d"/>
+		<default-amount value="1"/>
+		<resource-number value="4"/>
+	</type>
+</resource>
