@@ -61,22 +61,6 @@
 			<animation path="models/drake_rider_standing.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
-		<skill>
-			<type value="move"/>
-			<name value="move_skill"/>		
-			<ep-cost value="0"/>
-			<speed value="540"/>
-			<anim-speed value="94"/>
-			<animation path="models/drake_rider_walking.g3d"/>
-			<particles value="true">
-			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/dr_walk1.wav"/>
-				<sound-file path="sounds/dr_walk2.wav"/>
-			</sound>
-
-		</skill>
 
 		<skill>
 			<type value="die"/>	
