@@ -6,7 +6,7 @@
 		<player control="cpu" faction="magic" team="2"/>	
 		<player control="cpu" faction="tech" team="2"/>	
 		<player control="cpu-mega" faction="magic" team="2"/>	
-		<player control="cpu" faction="magic" team="9"/>
+		<player control="cpu" faction="magic" team="11"/>
 		<player control="cpu-mega" faction="magic" team="1"/>
 
 	</players>
